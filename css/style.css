@@ -1,0 +1,31 @@
+@import url('./reset.meyer.css');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/*
+font-family: 'Macondo', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+:root {
+    --thundercred: #BF213E;
+    --thunderblue: #D0E9F2;
+    --thundergold: #D9BC66;
+    --thundergrey: #595959;
+    --thunderdark: #0D0D0D;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, blockquote {
+    font-family: 'Macondo', cursive;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.7rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.1rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.9rem; }
