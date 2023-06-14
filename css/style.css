@@ -21,6 +21,11 @@ body {
 
 h1, h2, h3, h4, h5, h6, blockquote {
     font-family: 'Macondo', cursive;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 0.7rem;
 }
 
 h1 { font-size: 2rem; }
@@ -29,3 +34,27 @@ h3 { font-size: 1.3rem; }
 h4 { font-size: 1.1rem; }
 h5 { font-size: 1rem; }
 h6 { font-size: 0.9rem; }
+
+/* ESPAÇAMENTO DOS CONTAINERS */
+
+header figure {
+    margin: 1rem;
+}
+
+nav {
+    padding: 0.5rem;
+}
+
+main form, main article, main section, footer address {
+    margin: 2rem 1rem;
+}
+
+main section figure {
+    margin-right: 1rem;
+    width: 40%;
+    float: left;
+}
+
+main form div {
+    margin: 0.5rem;
+}
