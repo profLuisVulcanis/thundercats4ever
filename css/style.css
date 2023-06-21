@@ -28,24 +28,50 @@ p {
     margin-bottom: 0.7rem;
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.7rem; }
+h1 { font-size: 2rem; color: var(--thundercred); }
+h2 { font-size: 1.7rem; color: var(--thundergrey); }
 h3 { font-size: 1.3rem; }
 h4 { font-size: 1.1rem; }
 h5 { font-size: 1rem; }
 h6 { font-size: 0.9rem; }
+blockquote { color: var(--thundergold); }
+
+a {
+    color: var(--thundergold);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--thunderblue);
+}
 
 /* ESPAÇAMENTO DOS CONTAINERS */
 
+header {
+    background-color: var(--thundercred);
+}
+
 header figure {
-    margin: 1rem;
+    padding: 1rem;
 }
 
 nav {
     padding: 0.5rem;
+    background-color: var(--thunderdark);
 }
 
-main form, main article, main section, footer address {
+.disable {
+    cursor: none;
+    color: var(--thundercred); 
+}
+
+main figure figcaption {
+    padding: 0.2rem; 
+    font-size: 0.8rem; 
+    color: var(--thundergrey);
+}
+
+main form, main article, main section {
     margin: 2rem 1rem;
 }
 
@@ -57,4 +83,69 @@ main section figure {
 
 main form div {
     margin: 0.5rem;
+}
+
+footer {
+    background-color: var(--thunderdark);
+}
+
+footer address {
+    padding: 3rem;
+    font-size: 0.8rem;
+    color: var(--thundergrey);
+}
+
+/*CONFIGURAÇÕES DE FORMULÁRIO*/
+
+label {
+    font-size: 0.9rem;
+    color: var(--thundercred);
+}
+
+input, textarea {
+    border: 1px solid var(--thundergrey);
+    font-size: 1.1rem;
+    width: 98%;
+    background-color: var(--thunderblue);
+    border-radius: 0.5rem;
+}
+
+input:focus, textarea:focus {
+    background-color: var(--thundergold);
+}
+
+.submit {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    background-color: var(--thundergold);
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: var(--thunderblue);
+}
+
+.submit:focus {
+    background-color: var(--thunderdark);
+    color: var(--thunderblue);
+}
+
+.formBox {
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    border-radius: 2%;
+    padding: 2%;
+    background: linear-gradient(var(--thunderblue), var(--thundergrey));
+}
+
+fieldset legend {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    background-color: var(--thunderdark);
+    border-radius: 0.6rem;
+    color:  var(--thundergold);
 }

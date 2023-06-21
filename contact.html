@@ -19,11 +19,11 @@
         </figure>
     </header>
     <nav>
-        <button onclick="window:location='./'">HOME</button>
-        <button onclick="window:location='./about.html'">HISTÓRIA</button>
-        <button onclick="window:location='./characters.html'">PERSONAGENS</button>
-        <button onclick="window.location='./store.html'">LOJA</button>
-        <button onclick="window:location='./contact.html'" disabled>CONTATO</button>
+        <a href="./">Home</a>
+        <a href="./about.html">Sobre</a>
+        <a href="./characters.html">Personagens</a>
+        <a href="./store.html">Loja</a>
+        <a class="disable">Contato</a>    
     </nav>
     <main>
         <section>
@@ -34,30 +34,29 @@
         </section>
         
         <form action="https://formspree.io/f/xbjeedgd" method="post">
-            <div>
+            <div class="formBox">
                 <label for="nome">
                     Seu Nome: <br>
                     <input type="text" name="nome" id="nome" maxlength="60" tabindex="1" placeholder="Informe seu nome" required autofocus>
                 </label>
             </div>
-            <div>
+            <div class="formBox">
                 <label for="email">
                     Seu email: <br>
                     <input type="email" name="email" id="email" maxlength="60" tabindex="2" placeholder="Informe o E-mail" required>
                 </label>
             </div>
-            <div>
+            <div class="formBox">
                 <label for="mensagem">
                     Sua mensagem: <br>
                     <textarea name="mensagem" id="mensagem" cols="40" rows="10" tabindex="3" placeholder="Aqui" required></textarea>
                 </label>
             </div>
-            <div>
-                <input type="submit" value="Enviar Mensagem">
+            <div class="formBox">
+                <button class="submit" type="submit">Enviar Mensagem</button>
             </div>
         </form>
     </main>
-    <hr>
     <footer>
         <address>Site Aula desenvolvido por <a href="mailto:webcursoprofessorluis@gmail.com">Luis Vulcanis</a> para o <a href="https://youtube.com/@professorluis" target="_blank" rel="noopener noreferrer">Canal do Professor Luis</a> &copy; 2023</address>
     </footer>
