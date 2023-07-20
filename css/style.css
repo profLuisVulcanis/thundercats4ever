@@ -85,6 +85,13 @@ main form div {
     margin: 0.5rem;
 }
 
+.store {
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 1rem;
+    justify-content: space-around;
+}
+
 footer {
     background-color: var(--thunderdark);
 }
@@ -148,4 +155,47 @@ fieldset legend {
     background-color: var(--thunderdark);
     border-radius: 0.6rem;
     color:  var(--thundergold);
+}
+
+/*TRATAMENTO DA RESPONSIVIDADE*/
+
+@media screen and (min-width: 768px) {
+    form {
+        padding: 0% 10%;
+    }
+    .characteres {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    header figure {
+        padding: 0 10rem;
+    }
+    form {
+        padding: 0% 20%;
+    }
+    .characteres {
+        grid-template-columns: 33% 33% 33%;
+        gap: 0.5rem;
+    }
+    .character {
+        height: 360px;
+        padding: 1rem;
+        overflow-y: scroll;
+        border: 1px solid var(--thundergrey);
+        border-radius: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    form {
+        padding: 0% 25%;
+    }
+    .about {
+        width: 960px;  
+        padding: 1rem; 
+        margin: auto;     
+    }
 }
